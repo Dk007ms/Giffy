@@ -13,13 +13,13 @@ export default function Container() {
         <Spinner />
       ) : (
         <img
-          className="gif_container object-cover h-96 rounded-md shadow-lg mb-4"
+          className="gif_container object-cover max-h-96 rounded-md shadow-lg mb-4"
           src={gif}
           alt="giffy"
         />
       )}
       <button
-        className="generate_random bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition duration-300"
+        className="generate_random bg-blue-500 text-white py-2 px-4 w-full rounded-full hover:bg-blue-700 transition duration-300"
         onClick={() => fetchData("Jujutsu Kaisen")}
       >
         Generate
